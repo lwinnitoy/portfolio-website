@@ -1,0 +1,102 @@
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 13% 33% 25% 20% 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%; 
+    background-color: 293241;
+    height: 1100px;
+}
+
+.heading{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    background-color: 293241;
+    color: e0fbfc;
+    flex-flow: column wrap;
+    margin-left: 10px;
+    height: fit-content;
+}
+.heading h1{
+    size: 70px;
+    margin-bottom: 0%;
+}
+
+.section{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    background-color: 3d5a80;
+    flex-flow: row wrap;
+}
+.title{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin: 0%;
+    font-size: 25px;
+    background-color: 3d5a80;
+    width: 20%;
+    color: e0fbfc;
+    padding-top: 20px;
+}
+
+.box{
+    width: 80%;
+}
+
+#Experience{
+    grid-row: 2;
+    background-color: e0fbfc;
+}
+#Education{
+    grid-row: 3;
+    background-color: 98c1d9;
+}
+#Skills{
+    grid-row: 4;
+    background-color: e0fbfc;
+}
+#References{
+    grid-row: 5;
+    background-color: 98c1d9;
+}
+
+.infobox{
+    padding-left: 5px;
+    padding-top: 3px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.infobox h3{
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+.infobox h5{
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+.infobox p{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 13px;
+}
+
+.infobox li{
+    margin: 5px;
+}
+
+.infolist{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 20px;
+    font-size: 15px;
+    height: 239px;
+    align-items: top;
+    padding-top: 15px
+}
+
