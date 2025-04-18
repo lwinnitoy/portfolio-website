@@ -1,0 +1,13 @@
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.exe
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.deps.json
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.runtimeconfig.json
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.runtimeconfig.dev.json
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.dll
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\bin\Debug\netcoreapp3.1\HangMe.pdb
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.csproj.AssemblyReference.cache
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.AssemblyInfoInputs.cache
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.AssemblyInfo.cs
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.csproj.CoreCompileInputs.cache
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.dll
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.pdb
+H:\Documents\DMGD\Programming\C#\HangMe\HangMe\obj\Debug\netcoreapp3.1\HangMe.genruntimeconfig.cache

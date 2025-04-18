@@ -1,0 +1,77 @@
+/* general style rules */
+/* You do not have to change anything here for lab 4 */
+
+body {
+	margin: 0px;
+	font-size: 20px;
+}
+
+h2 {
+	color: DarkGreen;
+}
+
+#logo {
+	width: 100px;
+	padding: 15px;
+}
+
+ol ol {
+	list-style-type: lower-roman;
+}
+
+.setup {
+	width: auto;
+	max-width: 80%;
+}
+
+
+/* navigation bar */
+
+.navigation {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation a {
+	text-transform: uppercase;
+	color: #d7b5b5;
+	font-size: 32px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+/* grid container */
+
+.grid-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	
+	/* add row and column information for grid here */
+	grid-template-columns: 20% 75% 5%;
+}
+
+.main{
+	grid-column-start: 2;
+	grid-column-end: 3 ;
+	max-height:100%; 
+	overflow-y: auto;
+	background-color: lightgray;
+	padding: 20px;
+	border-left: 10px solid darkgoldenrod;
+	border-right: 8px solid darkgoldenrod;
+}
+
+.left{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-color: #470809;
+}
+
+.right{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background-color: #470809;
+}
