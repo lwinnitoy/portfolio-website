@@ -5,64 +5,66 @@
     </head>
     <body>
         <div class="header">
-            <img src="photos/logo.png" alt="" style="width: 175px;height: 40px;" id="logo">
             <ul>
-                <a href="#aboutMe"><li>About</li></a>
                 <a href="resume.html" target="_blank"><li>Resume</li></a>
                 <a href="portfolio.html" target="_self"><li>Portfolio</li></a>
-                <a href="Travel.html"><li>Travel</li></a>
                 <a href="#contactme"><li>Contact</li></a>
             </ul>
         </div>
         <div class="title" id="Home">
             <ul>
-            <h1>Liam Winnitoy</h1>
-            <li>Full stack development | Software engineer</li>
+            <h3>Hi, I'm Liam Winnitoy</h3>
+            <h1>I Build Data Systems</h1>
+            <p>I'm a Computer Science student at the University of Victoria with a passion for building systems that handle data with clarity and purpose.
+                I enjoy turning raw information into useful tools.</p>
             </ul>   
         </div>
-        <div class="infoBox aboutMe" id="aboutMe">
-            <div class="aboutMe">
-                <h1>About me</h1>
-                <ul>
-                <li>Dedicated, curious, calm, and focused computer science major looking for new experience in program development and coding with an engaging, supportive and fun-loving team.</li>
-                <li><b>Activites:</b> Balance the active life of full time student, with ocasional work shifts. Enjoy physical exercise, travel, food, and time with family and friends.</li>
-                <li><b>Hobbies:</b> Aside from school-assignments and work, free time is filled with reading, cooking, and building personal projects.</li>
-                <li><b>Competencies:</b> Expereice in programming languages such as: Java, Python, C#, html, Css, and Javascript.</li>
-                <li><b>Goals:</b> Currently aiming to gain experience in any programming fields, eager to learn as much as possible and gain a better understanding of the software and website development industry.</li>
-                </ul>
-            </div>
-            <div>
-                <img src="photos/portrait.jpg" alt="img of Liam Winnitoy">
-            </div>
+        <div class="contact-icons" id="main-contact-icons">
+            <ul>
+                <a href="https://github.com/lwinnitoy"><img src="photos/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/"><img src="photos/linkedin-icon.png"></a>
+                <a href="https://www.instagram.com/liam_winnitoy/"><img src="photos/instagram-icon.png"></a>
+            </ul>
         </div>
+        
         <div>
-            <div class="languages">
-                <a href="portfolio.html"><img src="photos/css-html-logo.png" alt="css/html logo"></a>
-                <a href="portfolio.html"><img src="photos/java-logo.png" alt="java logo"></a>
-                <a href="portfolio.html"><img src="photos/c_-logo.png" alt="c# logo"></a>
-                <a href="portfolio.html"><img src="photos/python-logo.png" alt="python logo"></a>
-                <a href="portfolio.html"><img src="photos/javascript-logo.png" alt="javascript logo"></a>
+            <div class="intro-spacer"></div>
+
+            <div id="progress-wrapper" class="progress-absolute">
+                <div class="progress-bar"></div>
+                <div class="progress-dot" style="top: 33%"></div>
+                <div class="progress-dot" style="top: 66%"></div>
+                <div class="progress-dot" style="top: 100%"></div>
             </div>
+            <script src="proj1.js"></script>
         </div>
-        <h1 id="contactme">Contact Me</h1>
-        <div class="contact">
-            <div>
-                <ul class="contactinfo">
-                    <h3>Contact Info</h3>
-                    <li>778-587-3587</li>
-                    <li>lwinnitoy@outlook.com</li>
-                    <li>lwinnitoy@gmail.com</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="contactinfo">
-                <h3>Social Media</h3>
-                <li><a href="https://www.instagram.com/liam_winnitoy/" target="_blank">Intstagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100063994432025" target="_blank">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/" target="_blank">Linkedin</a></li>
-                </ul>
-            </div>
+
+        <div class="projects" id="project1">
+            <img src="photos/recipe-generator-image.png" alt="Project 1 Screenshot">
+            <p>My first project was a simple web application that allows users to input their favorite movies and receive recommendations based on their preferences. 
+                I used HTML, CSS, and JavaScript to create the front-end interface, and Node.js for the back-end server. 
+                The project helped me understand the basics of web development and how to work with APIs.</p>
+            <div class="project-spacer"></div>
         </div>
+
+        <div class="projects" id="project2">
+            <img src="photos/medical-clinic.png" alt="Project 2 Screenshot">
+            
+            <p>My second project was a data visualization tool that allows users to explore large datasets using interactive charts and graphs. 
+                I used D3.js for the front-end and Python with Flask for the back-end. 
+                This project taught me how to handle large amounts of data and create meaningful visualizations.</p>
+            <div class="project-spacer"></div>
+        </div>
+
+        <div class="projects" id="project3">
+            <img src="photos/project3.png" alt="Project 3 Screenshot">
+            <p>My third project was a machine learning application that predicts house prices based on various features. 
+                I used Python with Scikit-learn for the machine learning model and Flask for the web application. 
+                This project helped me understand the basics of machine learning and how to deploy models in a web application.</p>
+            
+            <div class="project-spacer"></div>
+        </div>
+        
     </body>
 
 
