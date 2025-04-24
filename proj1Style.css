@@ -153,7 +153,10 @@ body{
   }
 
   .projects img{
+    display: flex;
+    align-self: center;
     width: 50%;
+    height: 80%;
     margin-top: 0%;
     margin-bottom: 0%;
     object-fit: contain;
