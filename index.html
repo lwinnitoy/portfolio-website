@@ -6,8 +6,8 @@
     <body>
         <div class="header">
             <ul>
-                <a href="" target="_blank"><li>Resume</li></a>
-                <a href=""><li>Contact</li></a>
+                <a class="button" href="resume.pdf" target="_blank"><li>Resume</li></a>
+                <a class="button" href="#contact"><li>Contact</li></a>
             </ul>
         </div>
         <div class="title" id="Home">
@@ -16,7 +16,10 @@
             <h1>I Build Data Systems</h1>
             <p>I'm a Computer Science student at the University of Victoria with a passion for building systems that handle data with clarity and purpose.
                 I enjoy turning raw information into useful tools.</p>
-            </ul>   
+            <a class="button" id="title-button" href="#contact">Get in Touch</a>
+            </ul>
+            
+            
         </div>
         <div class="contact-icons" id="main-contact-icons">
             <ul>
@@ -24,43 +27,47 @@
                 <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/"><img src="images/linkedin-icon.png"></a>
                 <a href="https://www.instagram.com/liam_winnitoy/"><img src="images/instagram-icon.png"></a>
             </ul>
+            
         </div>
         
         <div>
-            <div class="intro-spacer"></div>
-
             <div id="progress-wrapper" class="progress-absolute">
                 <div class="progress-bar"></div>
-                <div class="progress-dot" style="top: 33%"></div>
-                <div class="progress-dot" style="top: 66%"></div>
-                <div class="progress-dot" style="top: 100%"></div>
+                <div class="progress-dot" style="top: 36%"></div>
+                <div class="progress-dot" style="top: 84%"></div>
             </div>
             <script src="proj1.js"></script>
         </div>
 
+
         <div class="projects" id="project1">
-            <img src="images/recipe-generator-image.png" alt="Project 1 Screenshot">
-            <p>My first project was a simple web application that allows users to input ingredients and receive recipes based on their food choice. 
-                I used HTML, CSS, and JavaScript to create the front-end interface, and spoonacular.com as the API. 
-                The project helped me understand the basics of web development and how to work with APIs.</p>
+            <img src="images/medical-clinic.png" alt="Project 2 Screenshot">
+            <div class="project-info">
+                <p>My first project was a medical clinic patient system. It allows users to mangage patient records, information, and appointments.
+                    I used Python with pickle and JSON for persistence, and PyQT6 for the UI. 
+                    This project taught me how to utalize CRUD operations and DAOs to manage databases.</p>
+                <a class="button" href="https://github.com/lwinnitoy/Medical-clinic-project">Check it out</a>
+            </div>
             <div class="project-spacer"></div>
         </div>
 
         <div class="projects" id="project2">
-            <img src="images/medical-clinic.png" alt="Project 2 Screenshot">
-            <p>My second project was a medical clinic patient system. It allows users to mangage patient records, information, and appointments.
-                I used Python with pickle and JSON for persistence, and PyQT6 for the UI. 
-                This project taught me how to utalize CRUD operations and DAOs to manage databases.</p>
+            <img src="images/flight-allocation-graph.png" alt="Project 3 Screenshot">
+            <div class="project-info">
+                <p>My second project was a solution for a flight allocation problem using Edmonds-Karp network flow algorithm. I used Java to write a graph, edge, and pair class.
+                I learned how to implement a graph and network flow algorithm and used them to solve real-world problems.
+                </p>
+                <a class="button" href="https://github.com/lwinnitoy/edmonds-karp-flight-allocation">Check it out</a>
+            </div>
             <div class="project-spacer"></div>
         </div>
 
-        <div class="projects" id="project3">
-            <img src="images/flight-allocation-graph.png" alt="Project 3 Screenshot">
-            <p>My third project was a solution for a flight allocation problem using Edmonds-Karp network flow algorithm. I used Java to write a graph, edge, and pair class.
-                I learned how to implement a graph and network flow algorithm and used them to solve real-world problems.
-            </p>
-            
-            <div class="project-spacer"></div>
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <ul>
+                <li><a href="mailto:lwinnitoy@gmail.com">lwinnitoy@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/">LinkedIn</a></li>
+            </ul>
         </div>
         
     </body>
