@@ -26,5 +26,7 @@ window.addEventListener('scroll', () => {
     progressBar.style.height = `${scrollPercent}%`;
   });
 
+  
+
 
  
