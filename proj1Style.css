@@ -6,16 +6,21 @@
 
 body{
     margin: 0;
-    background-color: 000000;
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-image: image('images/background.jpg');
-
+    background-color: #000;
+    background-image: 
+      linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 
 
 .header{
+    position: fixed;
+    bottom: 0;
+    right: 0;
     display: flex;
     flex-flow: row wrap;
     align-content: right;
@@ -49,17 +54,19 @@ body{
     margin-top: 0%;
     margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: -50px;
-    height: 450px;
+    height: 100%;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     color: white;
-    padding-left: 70px;
+    padding-left: 30px;
+    
 }
 
 .title ul{
-  margin-bottom: 0%;
+  margin-bottom: 10%;
   padding: 0%;
+  overflow: visible;
+  margin-right: 10px;
 }
 .title h1{
     font-size: 70px;
@@ -68,25 +75,65 @@ body{
 }
 
 .title p{
-    width: 60%;
+    width: 90%;
 }
 
 .title a{
   display: flex;
   width: fit-content;
-  margin-top: 35px;
+  margin-right: 3%;
 }
 
-.contact-icons{
+.title-button-container{
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 30px;
+}
+
+#Hero-Image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+
+@media (max-width: 700px) {
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+
+  #Hero-Image{
+    display: none; /* Hides the image on smaller screens */
+  }
+}
+
+.contact-icons {
+  position: fixed; /* Fixes the element to the viewport */
+  bottom: 0; /* Positions it at the bottom of the screen */
+  left: 0; /* Aligns it to the left side of the screen */
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 0%;
+  justify-content: left; /* Centers the icons horizontally */
+  padding: 10px; /* Adds spacing around the icons */
+  z-index: 1000; /* Ensures it stays above other elements */
 }
-.contact-icons ul{
-  padding-left: 0%;
-}
+
 .contact-icons a{
     display: flex;
     padding: 10px;
@@ -98,96 +145,11 @@ body{
     text-decoration: none;
 }
 
-/*css for the spacer to make the bar appear at the right time*/
-.intro-spacer {
-    height: 200px; /* Adjust this to control when the bar appears */
-  }
-
-/*css for the progress bar*/
-#progress-wrapper {
-    width: 4px;
-    height: 80vh;
-    background-color: #333;
-    border-radius: 2px;
-    left: 20px;
-    z-index: 999;
-  }
-  
-  .progress-absolute {
-    position: absolute;
-    top: 80vh; /* start offscreen, near the bottom */
-  }
-  
-  .progress-fixed {
-    position: fixed;
-    top: 10vh;
-  }
-  
-  .progress-bar {
-    width: 100%;
-    height: 0%;
-    background-color: white;
-    border-radius: 2px;
-    transition: height 0.25s ease;
-  }
-  
-  .progress-dot {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-  }
-
-
-  /*css for project sections*/
-  .projects{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 100vh;
-  }
-
-  .projects p{
-    display: flex;
-    color: white;
-    font-size: 20px;
-    margin-top: 0%;
-    margin-bottom: 25px;
-    line-height: 2;
-  }
-
-  .projects img{
-    display: flex;
+.contact-icons img{
+    width: 35px;
+    height: 35px;
     align-self: center;
-    width: 50%;
-    height: 80%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    object-fit: contain;
-    border-radius: 15px;
-  }
-
-  .project-info{
-    display: flex;
-    width: 30%;
-    flex-flow: column wrap;
-    justify-content: center;
-  }
-
-  .project-info .button{
-    width: fit-content;
-  }
-  
-  .project-spacer{
-    height: 200px; /* Adjust this to control when the bar appears */
-  }
-
-
+}
 
   .button {
     padding: 12px 24px;
@@ -209,40 +171,21 @@ body{
     box-shadow: 0 0 15px white, 0 0 25px white;
   }
 
-  #title-button{
+  .title button{
     padding: 12px 30px;
     border-radius: 6px;
+    margin: 10px;
   }
 
-  .contact{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 2%;
-    color: black;
-    height: 30vh;
-    background-color: gainsboro;
-    border-radius: 20px;
+  .email p{
+    color: white;
+    transform: rotate(180deg);
+    transform-origin: center;
+    writing-mode: vertical-lr;
   }
 
-  .contact ul{
-    padding: 0%;
-    list-style: none;
-  }
-
-  .contact a{
+  .email a{
     text-decoration: none;
-    color: black;
-
   }
 
-  .contact a:hover{
-    text-decoration: underline;
-
-  }
-
-  .contact h1{
-    margin-bottom: 0%;
-    border-bottom: 2px solid black;
-  }
+  

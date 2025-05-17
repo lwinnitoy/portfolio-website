@@ -4,71 +4,42 @@
         <link rel="stylesheet" href="proj1Style.css">
     </head>
     <body>
-        <div class="header">
-            <ul>
-                <a class="button" href="resume.pdf" target="_blank"><li>Resume</li></a>
-                <a class="button" href="#contact"><li>Contact</li></a>
-            </ul>
-        </div>
         <div class="title" id="Home">
             <ul>
-            <h3>Hi, I'm Liam Winnitoy</h3>
-            <h1>I Build Data Systems</h1>
-            <p>I'm a Computer Science student at the University of Victoria with a passion for building systems that handle data with clarity and purpose.
+                <h3>Hi, I'm Liam Winnitoy</h3>
+                <h1>I Build Data Systems</h1>
+                <p>I'm a Computer Science student at the University of Victoria with a passion for building systems that handle data with clarity and purpose.
                 I enjoy turning raw information into useful tools.</p>
-            <a class="button" id="title-button" href="#contact">Get in Touch</a>
+                <div class="title-button-container">
+                    <a class="button" id="title-button" href="mailto:lwinnitoy@gmail.com">Get in Touch</a>
+                    <a class="button" href="./resume.pdf" target="_blank">Resume</a>
+                </div>
             </ul>
+            <img src="images/hero-image.png" id="Hero-Image">
             
             
         </div>
         <div class="contact-icons" id="main-contact-icons">
-            <ul>
-                <a href="https://github.com/lwinnitoy"><img src="images/github-icon.png"></a>
-                <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/"><img src="images/linkedin-icon.png"></a>
-                <a href="https://www.instagram.com/liam_winnitoy/"><img src="images/instagram-icon.png"></a>
-            </ul>
+            
+                <a href="https://github.com/lwinnitoy" target="_blank">
+                    <img src="images/github-icon.png" alt="Github">
+                    <span class="tooltip">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/" target="_blank">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                    <span class="tooltip">LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/liam_winnitoy/" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram" style="height: 30px; width: 30px;">
+                    <span class="tooltip">Instagram</span>
+                </a>
+                <a href="mailto:lwinnitoy@gmail.com">
+                    <p alt="Email">lwinnitoy@gmail.com</p>
+                    <span class="tooltip">Email</span>
+                </a>
             
         </div>
         
-        <div>
-            <div id="progress-wrapper" class="progress-absolute">
-                <div class="progress-bar"></div>
-                <div class="progress-dot" style="top: 36%"></div>
-                <div class="progress-dot" style="top: 84%"></div>
-            </div>
-            <script src="proj1.js"></script>
-        </div>
-
-
-        <div class="projects" id="project1">
-            <img src="images/medical-clinic.png" alt="Project 2 Screenshot">
-            <div class="project-info">
-                <p>My first project was a medical clinic patient system. It allows users to mangage patient records, information, and appointments.
-                    I used Python with pickle and JSON for persistence, and PyQT6 for the UI. 
-                    This project taught me how to utalize CRUD operations and DAOs to manage databases.</p>
-                <a class="button" href="https://github.com/lwinnitoy/Medical-clinic-project">Check it out</a>
-            </div>
-            <div class="project-spacer"></div>
-        </div>
-
-        <div class="projects" id="project2">
-            <img src="images/flight-allocation-graph.png" alt="Project 3 Screenshot">
-            <div class="project-info">
-                <p>My second project was a solution for a flight allocation problem using Edmonds-Karp network flow algorithm. I used Java to write a graph, edge, and pair class.
-                I learned how to implement a graph and network flow algorithm and used them to solve real-world problems.
-                </p>
-                <a class="button" href="https://github.com/lwinnitoy/edmonds-karp-flight-allocation">Check it out</a>
-            </div>
-            <div class="project-spacer"></div>
-        </div>
-
-        <div class="contact" id="contact">
-            <h1>Contact Me</h1>
-            <ul>
-                <li><a href="mailto:lwinnitoy@gmail.com">lwinnitoy@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/">LinkedIn</a></li>
-            </ul>
-        </div>
         
     </body>
 
