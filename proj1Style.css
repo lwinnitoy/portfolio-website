@@ -105,7 +105,29 @@ body{
     z-index: -1;
 }
 
-@media (max-width: 768px) or (orientation: portrait) {
+@media (max-width: 768px) {
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.3);
+    z-index: -1;
+  }
+
+  #Hero-Image{
+    display: none; /* Hides the image on smaller screens */
+  }
+}
+
+@media (max-width: 450px) or (orientation: portrait) {
 
   body::before {
     content: '';
@@ -126,16 +148,29 @@ body{
     display: none; /* Hides the image on smaller screens */
   }
 
-  .title{
+  .title h3{
+    font-size: 40px;
+  }
+
+  .title h1{
+    font-size: 100px;
+    margin: 0;
+  }
+
+  .title p{
+    font-size: 32px;
+  }
+
+  .title-button-container{
     flex-direction: column;
-    width: 100%;
   }
 
-  .title ul{
-    align-self: flex-start;
+  .title a{
+    font-size: 32px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    padding: 15px 30px;
   }
-
-
 }
 
 .contact-icons {
