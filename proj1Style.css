@@ -104,7 +104,7 @@ body{
     filter: brightness(0.7);
     z-index: -1;
 }
-
+/*
 @media (max-width: 768px) {
 
   body::before {
@@ -123,11 +123,76 @@ body{
   }
 
   #Hero-Image{
-    display: none; /* Hides the image on smaller screens */
+    display: none;
   }
 }
+*/
 
-@media (max-width: 450px) or (orientation: portrait) {
+.contact-icons {
+  position: fixed; /* Fixes the element to the viewport */
+  bottom: 0; /* Positions it at the bottom of the screen */
+  left: 0; /* Aligns it to the left side of the screen */
+  display: flex;
+  justify-content: left; /* Centers the icons horizontally */
+  padding: 10px; /* Adds spacing around the icons */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.contact-icons a{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.contact-icons img{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+}
+
+#instagram-icon{
+    width: 30px;
+    height: 30px;
+}
+
+  .button {
+    padding: 12px 24px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 15px white, 0 0 25px white;
+  }
+
+  .title button{
+    padding: 12px 30px;
+    border-radius: 6px;
+    margin: 10px;
+  }
+
+  .email a{
+    text-decoration: none;
+  }
+
+
+@media (max-width: 550px) or (orientation: portrait) {
 
   body::before {
     content: '';
@@ -171,70 +236,24 @@ body{
     border: 3px solid white;
     padding: 15px 30px;
   }
+
+  .contact-icons a{
+    width: 90px;
+    height: 90px;
+  }
+
+  .contact-icons img{
+    width: 60px;
+    height: 60px;
+  }
+
+  #instagram-icon{
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-icons{
+    font-size: 30px;;
+  }
 }
-
-.contact-icons {
-  position: fixed; /* Fixes the element to the viewport */
-  bottom: 0; /* Positions it at the bottom of the screen */
-  left: 0; /* Aligns it to the left side of the screen */
-  display: flex;
-  justify-content: left; /* Centers the icons horizontally */
-  padding: 10px; /* Adds spacing around the icons */
-  z-index: 1000; /* Ensures it stays above other elements */
-}
-
-.contact-icons a{
-    display: flex;
-    padding: 10px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: white;
-    list-style: none;
-    color: white;
-    text-decoration: none;
-}
-
-.contact-icons img{
-    width: 35px;
-    height: 35px;
-    align-self: center;
-}
-
-  .button {
-    padding: 12px 24px;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 0px white;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .button:hover {
-    background: white;
-    color: black;
-    box-shadow: 0 0 15px white, 0 0 25px white;
-  }
-
-  .title button{
-    padding: 12px 30px;
-    border-radius: 6px;
-    margin: 10px;
-  }
-
-  .email p{
-    color: white;
-    transform: rotate(180deg);
-    transform-origin: center;
-    writing-mode: vertical-lr;
-  }
-
-  .email a{
-    text-decoration: none;
-  }
-
   
