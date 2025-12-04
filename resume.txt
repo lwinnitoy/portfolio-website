@@ -1,0 +1,67 @@
+LIAM WINNITOY 
+Victoria, BC 
+liawinn@icloud.com, (778) 587-3587, LinkedIn, GitHub 
+  
+EDUCATION 
+Bachelor of Science in Computer Science (BSc) September 2023 - May 2027 
+University of Victoria, Victoria, Canada. 
+Relevant coursework: Data Structures & Algorithms, Operating Systems, Software Development 
+Methods, Databases, Networking, Technical Writing. 
+ 
+PROFESSIONAL EXPERIENCE 
+Programmer Analyst CO-OP May 2025 - August 2025 
+Consumer Protection BC, Victoria, Canada 
+• Developed 4 multi-page Power BI dashboards on transaction and survey data, improving data 
+accessibility and reducing manual reporting time for managers. 
+• Designed and optimized SQL queries on Microsoft SQL Server to filter and extract post-2020 
+transaction data, ensuring efficient inputs for reporting pipelines. 
+• Identified and documented 3 critical defects (7 total issues) during feature testing, providing potential 
+fixes that improved application reliability. 
+• Collaborated with developers to resolve bugs quickly, contributing to higher-quality releases and 
+streamlined development cycles. 
+ 
+Technology Assistant & Vacation Rental Concierge June 2024 - September 2024 
+Amala Vacation Rental Solutions, Victoria, Canada 
+• Provided technical support for a platform of 1000+ customers, supported online marketing by 
+assisting in website optimization efforts. 
+• Designed and optimized a mobile-friendly website for a massage therapist, utilizing custom HTML 
+and workflow management tools. 
+• Gained experience with automation workflows and supported website modifications, including 
+introductory work with WordPress. 
+ 
+PROJECTS 
+Model for a Medical Clinic System October 2024 - November 2024 
+• Developed a Python system for managing clinic records, implemented CRUD operations for patient 
+data and medical notes. 
+• Created and ran 20+ unit and integration tests using unittest to validate CRUD functionality, data 
+integrity, and system reliability. 
+• Collaborated in a team using Git, with regular commits, branching, and code review. Prioritized 
+algorithm design, refactoring coding efficiency, and practicing object-oriented principles. 
+  
+Web Funnel Development July 2024 - August 2024 
+• Designed and optimized a responsive website, enhancing user experience on mobile and tablet 
+devices. 
+• Implemented custom HTML to enhance website functionality and tailor features to client 
+specifications. 
+• Collaborated directly with client to get requirements, address feedback, and deliver a solution 
+exceeding expectations. 
+• Automated email campaigns by developing workflows using ClickFunnels, ensuring consistent client 
+engagement and generating 11 new leads. 
+
+SKILLS 
+Technology 
+• Programming Languages: Java, Python, C, SQL, AVR Assembly, HTML, CSS, R (introductory) 
+• Tools & Technologies: Git, GitHub, GitHub Co-Pilot, VS Code Power BI, SQL Server Management 
+Studio, Office 365, R Studio, WordPress. 
+Soft Skills 
+• Problem-Solving: Broke down complex challenges and implemented efficient solutions, such as 
+optimizing SQL queries to streamline reporting pipelines. 
+• Attention to Detail: Maintained accuracy in SQL queries, feature testing, and data validation, 
+identifying and documenting seven issues (including three critical defects). 
+• Communication and Teamwork: Partnered with developers to resolve bugs quickly and collaborated 
+with managers to translate reporting needs into actionable dashboards. 
+• Technical Writing: Documented reporting processes and defect findings with clear, concise writing 
+while adhering to technical standards. 
+  
+ 
+  
