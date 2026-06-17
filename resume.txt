@@ -1,67 +1,142 @@
-LIAM WINNITOY 
-Victoria, BC 
-liawinn@icloud.com, (778) 587-3587, LinkedIn, GitHub 
-  
-EDUCATION 
-Bachelor of Science in Computer Science (BSc) September 2023 - May 2027 
-University of Victoria, Victoria, Canada. 
-Relevant coursework: Data Structures & Algorithms, Operating Systems, Software Development 
-Methods, Databases, Networking, Technical Writing. 
+LIAM WINNITOY
+Victoria, BC
+liawinn@icloud.com | (778) 587 3587 | LinkedIn | GitHub
  
-PROFESSIONAL EXPERIENCE 
-Programmer Analyst CO-OP May 2025 - August 2025 
-Consumer Protection BC, Victoria, Canada 
-• Developed 4 multi-page Power BI dashboards on transaction and survey data, improving data 
-accessibility and reducing manual reporting time for managers. 
-• Designed and optimized SQL queries on Microsoft SQL Server to filter and extract post-2020 
-transaction data, ensuring efficient inputs for reporting pipelines. 
-• Identified and documented 3 critical defects (7 total issues) during feature testing, providing potential 
-fixes that improved application reliability. 
-• Collaborated with developers to resolve bugs quickly, contributing to higher-quality releases and 
-streamlined development cycles. 
- 
-Technology Assistant & Vacation Rental Concierge June 2024 - September 2024 
-Amala Vacation Rental Solutions, Victoria, Canada 
-• Provided technical support for a platform of 1000+ customers, supported online marketing by 
-assisting in website optimization efforts. 
-• Designed and optimized a mobile-friendly website for a massage therapist, utilizing custom HTML 
-and workflow management tools. 
-• Gained experience with automation workflows and supported website modifications, including 
-introductory work with WordPress. 
- 
-PROJECTS 
-Model for a Medical Clinic System October 2024 - November 2024 
-• Developed a Python system for managing clinic records, implemented CRUD operations for patient 
-data and medical notes. 
-• Created and ran 20+ unit and integration tests using unittest to validate CRUD functionality, data 
-integrity, and system reliability. 
-• Collaborated in a team using Git, with regular commits, branching, and code review. Prioritized 
-algorithm design, refactoring coding efficiency, and practicing object-oriented principles. 
-  
-Web Funnel Development July 2024 - August 2024 
-• Designed and optimized a responsive website, enhancing user experience on mobile and tablet 
-devices. 
-• Implemented custom HTML to enhance website functionality and tailor features to client 
-specifications. 
-• Collaborated directly with client to get requirements, address feedback, and deliver a solution 
-exceeding expectations. 
-• Automated email campaigns by developing workflows using ClickFunnels, ensuring consistent client 
-engagement and generating 11 new leads. 
+EDUCATION
+University of Victoria, Faculty of Engineering and Computer Science	September 2023 - May 2027
+Bachelor of Computer Science (Software Systems Option), Minor in Statistics
 
-SKILLS 
-Technology 
-• Programming Languages: Java, Python, C, SQL, AVR Assembly, HTML, CSS, R (introductory) 
-• Tools & Technologies: Git, GitHub, GitHub Co-Pilot, VS Code Power BI, SQL Server Management 
-Studio, Office 365, R Studio, WordPress. 
-Soft Skills 
-• Problem-Solving: Broke down complex challenges and implemented efficient solutions, such as 
-optimizing SQL queries to streamline reporting pipelines. 
-• Attention to Detail: Maintained accuracy in SQL queries, feature testing, and data validation, 
-identifying and documenting seven issues (including three critical defects). 
-• Communication and Teamwork: Partnered with developers to resolve bugs quickly and collaborated 
-with managers to translate reporting needs into actionable dashboards. 
-• Technical Writing: Documented reporting processes and defect findings with clear, concise writing 
-while adhering to technical standards. 
-  
+Relevant coursework: Data Structures & Algorithms, Operating Systems, Software Development Methods, Databases, Networking, Technical Writing, Data Mining, Statistics and Probability, Web Development, Requirements Engineering, Human Computer Interaction.
+
+PROFESSIONAL EXPERIENCE
+
+TECHNICAL EXPERIENCE
+
+Consumer Protection BC	Victoria, BC
+Programmer Analyst CO-OP	May 2025 - August 2025
+•	Developed 4 multi-page Power BI dashboards on transaction and survey data, improving data accessibility and reducing manual reporting time for managers.
+•	Designed and optimized SQL queries on Microsoft SQL Server to filter and extract post-2020 transaction data, ensuring efficient inputs for reporting pipelines.
+•	Identified and documented 3 critical defects (7 total issues) during feature testing, providing potential fixes that improved application reliability.
+•	Collaborated with developers to resolve bugs quickly, contributing to higher-quality releases and streamlined development cycles.
+
+ADDITIONAL EXPERIENCE
+
+Technology Assistant & Vacation Rental Concierge	June 2024 - September 2024
+Amala Vacation Rental Solutions, Victoria, Canada
+•	Provided technical support for a platform of 1000+ customers, supported online marketing by assisting in website optimization efforts.
+•	Designed and optimized a mobile-friendly website for a massage therapist, utilizing custom HTML and workflow management tools.
+•	Gained experience with automation workflows and supported website modifications, including introductory work with WordPress.
+
+
+CUSTOMER SERVICE EXPERIENCE
+
+Food & Beverage Services	September 2022 - August 2023
+Cineplex Entertainment, Victoria, Canada
+•	Led a team of 3 to provide efficient, high-quality customer service in a fast-paced environment, handling an average of 200+ customers per shift.
+•	Guaranteed compliance with food safety standards, accurately prepared orders with over 90% accuracy, and processed payments, maintaining speed and accuracy under high demand.
+•	Supervised 5+ new employees, emphasized company standards for customer service and operational procedures to maintain a smooth workflow and high performance.
+
+
+PROJECTS
+
+BACKEND
+
+Model for a Medical Clinic System	October 2024 - November 2024
+•	Developed a Python system for managing clinic records, implemented CRUD operations for patient data and medical notes.
+•	Created and ran 20+ unit and integration tests using unittest to validate CRUD functionality, data integrity, and system reliability.
+•	Collaborated in a team using Git, with regular commits, branching, and code review. 
+•	Emphasized algorithm design, code refactoring, and object-oriented design principles to improve maintainability and efficiency.
  
-  
+DATA ENGINEERING
+
+Automated Weather Data Platform	September 2025 - Present
+•	Designed and implemented a Python ETL pipeline that extracts weather data from OpenWeatherMap API for multiple cities, transforms JSON responses, and loads to PostgreSQL (Supabase) on an hourly schedule via GitHub Actions
+•	Built a lakehouse architecture using the medallion pattern (Bronze/Silver layers) with Parquet file format, implementing atomic writes and Hive-style partitioning for analytics-ready data
+•	Applied software engineering patterns including Repository Pattern for storage abstraction and incremental processing with high-water mark tracking to enable efficient batch updates
+•	Developed a comprehensive pytest test suite (60+ unit tests) with mocking for external dependencies, integrated into CI/CD pipeline for automated testing on pull requests
+
+Skills Extracted
+Python, Backend Development, CRUD Operations, Object-Oriented Programming, Unit Testing, Integration Testing, unittest, pytest, ETL Pipelines, REST APIs, JSON Processing, PostgreSQL, Data Warehousing, Lakehouse Architecture, Medallion Pattern, Parquet, Hive Partitioning, Incremental Processing, CI/CD, GitHub Actions, Repository Pattern, Version Control (Git), Code Review, Automated Testing
+
+
+SOFTWARE ENGINEERING 
+
+Canadian Newcomer Companion	September 2025 - November 2025
+•	Served as Team Lead for a 5–6 person mentor-guided project, coordinating deliverables, timelines, and stakeholder communication throughout a full requirements engineering lifecycle.
+•	Led requirements elicitation sessions with an industry mentor acting as the client, capturing functional requirements, non-functional requirements, constraints, assumptions, and risks.
+•	Authored and maintained a comprehensive Software Requirements Specification (SRS), ensuring clarity, traceability, and testability across system features and use cases.
+•	Translated ambiguous client needs into prioritized, measurable requirements, facilitating requirements negotiation and resolving conflicts through iterative feedback cycles.
+•	Modeled system behavior and data flows using UML use case diagrams, sequence diagrams, data flow diagrams (DFD Level 0), and entity-relationship diagrams (ERD).
+•	Defined non-functional requirements related to performance, scalability, security, accessibility (WCAG 2.2 AA), and privacy compliance (PIPEDA).
+•	Delivered mid-project presentations, led the final poster presentation, and demonstrated a functional prototype at a public demo evaluated by industry professionals.
+
+
+CONDENSED VERSION
+
+Canadian Newcomer Companion	September 2025 - November 2025
+•	Team Lead for a mentor-guided requirements engineering project; led stakeholder elicitation, requirements negotiation, and delivery of a full Software Requirements Specification (SRS).
+•	Authored functional and non-functional requirements and modeled system behavior using UML, ERDs, and data flow diagrams with a focus on accessibility, security, and scalability.
+•	Presented and demonstrated the solution at a public industry-evaluated demo, incorporating iterative feedback throughout the development cycle.
+
+Skills Extracted — Requirements Engineering Project
+•	Requirements Engineering
+•	SRS / Software Requirements Specification
+•	Functional & Non-Functional Requirements
+•	Stakeholder Management
+•	Requirements Elicitation / Validation / Negotiation
+•	UML, ERD, DFD
+•	Accessibility (WCAG)
+•	Security / Privacy (PIPEDA)
+•	Team Lead / Project Coordination
+•	Documentation / Version Control
+•	Agile-adjacent lifecycle language (without falsely claiming Scrum)
+
+
+
+HUMAN-COMPUTER INTERACTION / UX ENGINEERING
+
+Ethical Product Discovery Platform	September 2025 - November 2025
+•	Applied a full human-centered design (HCD) process to design and evaluate an interactive web-based prototype that helps users find ethically sourced, Canadian-made, and affordable product alternatives.
+•	Conducted user research using surveys and ethnographic observation to identify user goals, pain points, and decision-making behaviors related to ethical online shopping.
+•	Synthesized research findings into personas, journey maps, task flows, and prioritized design requirements, ensuring alignment with real user needs and stakeholder goals.
+•	Led and contributed to low- and medium-fidelity prototyping, including sketches, storyboards, video prototypes, and interactive wireframes to explore interaction flows and interface structure.
+•	Performed a structured heuristic evaluation using Nielsen’s 10 usability heuristics, identifying and prioritizing usability issues based on severity and impact.
+•	Iterated on the prototype by implementing design changes to improve efficiency, clarity, accessibility, and user control, informed directly by evaluation findings.
+•	Designed and executed a usability testing plan, combining in-person ethnographic task observation with post-task surveys to collect both qualitative and quantitative data.
+•	Analyzed user feedback using Likert-scale metrics and thematic analysis, measuring usability outcomes including efficiency and user satisfaction (mean usability score > 4/5).
+•	Collaborated in a 5-person team, presenting design rationale, evaluation results, and recommendations through formal reports and presentations.
+
+CONDENSED VERSION
+
+Ethical Product Discovery Platform	September 2025 - November 2025
+•	Designed and evaluated an interactive web prototype using a human-centered design process, incorporating user research, personas, journey maps, and iterative prototyping.
+•	Conducted heuristic evaluations and usability testing, analyzing qualitative and quantitative data to improve efficiency, accessibility, and user satisfaction.
+•	Collaborated in a 5-person team to present design decisions, evaluation results, and data-driven recommendations.
+
+Skills Extracted — HCI Project
+•	Human-Centered Design (HCD)
+•	UX / UI Design
+•	User Research
+•	Usability Testing
+•	Heuristic Evaluation
+•	Prototyping (Low / Medium Fidelity)
+•	Personas & Journey Mapping
+•	Accessibility & Usability
+•	Qualitative & Quantitative Analysis
+•	Cross-functional Collaboration
+•	Design Iteration
+
+
+SKILLS
+Technology
+•	Programming: Python, C, Java, SQL, AVR Assembly
+•	Data Analysis: R, Power BI
+•	Databases: Postgres, SQL Server
+•	Web Development: HTML, CSS, JavaScript, WordPress
+•	Operating Systems: Unix/Linux, Mac OSX, MS Windows
+•	Software: Git, GitHub, VS Code, Office 365, Azure
+Soft Skills
+•	Problem-Solving: Broke down complex challenges and implemented efficient solutions, such as optimizing SQL queries to streamline reporting pipelines.
+•	Attention to Detail: Maintained accuracy in SQL queries, feature testing, and data validation, identifying and documenting seven issues (including three critical defects).
+•	Communication and Teamwork: Partnered with developers to resolve bugs quickly and collaborated with managers to translate reporting needs into actionable dashboards.
+•	Technical Writing: Documented reporting processes and defect findings with clear, concise writing while adhering to technical standards.

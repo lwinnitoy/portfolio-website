@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# git-worktree - simple helper for creating/removing Git worktrees
+# Usage examples:
+#   ./git-worktree create feature/xyz [base-ref] [path]
+#   ./git-worktree add ../feature-xyz feature/xyz
+#   ./git-worktree remove ../feature-xyz
+#   ./git-worktree list
+#   ./git-worktree prune
+
+usage() {
+  cat <<EOF
+Usage: git-worktree <command> [args]
+
+Commands:
+  create <branch> [base-ref=origin/main] [path=../<branch>]  Create branch and add worktree (default path: ../<branch>)
+  add <path> <branch>                                        Add existing branch as worktree at path
+  remove <path|branch>                                       Remove a worktree by path or branch name
+  list                                                       List all worktrees (porcelain)
+  prune                                                      Prune worktrees for dead HEADs
+  help                                                       Show this help
+EOF
+}
+
+err() { echo "ERROR: $*" >&2; exit 1; }
+
+cmd=${1:-help}
+case "$cmd" in
+  create)
+    branch=${2:?"Missing branch. Use: create <branch> [base-ref] [path]"}
+    base=${3:-origin/main}
+    path=${4:-../$branch}
+    echo "Fetching ${base}..."
+    git fetch --quiet || true
+    echo "Creating branch '$branch' (based on $base) and worktree at '$path'"
+    git worktree add -b "$branch" "$path" "$base"
+    ;;
+
+  add)
+    path=${2:?"Missing path. Use: add <path> <branch>"}
+    branch=${3:?"Missing branch. Use: add <path> <branch>"}
+    git worktree add "$path" "$branch"
+    ;;
+
+  remove)
+    target=${2:?"Missing target. Use: remove <path|branch>"}
+    # Try direct remove (path)
+    if git worktree list --porcelain | grep -q "^worktree $target$"; then
+      git worktree remove "$target"
+      exit $?
+    fi
+
+    # Try treat as branch: find matching worktree path
+    wtpath=$(git worktree list --porcelain | awk -v b="$target" '
+      /worktree/ {p=$2} /branch/ { if ($2==b) print p }'
+    )
+
+    if [ -n "$wtpath" ]; then
+      echo "Removing worktree path: $wtpath (branch $target)"
+      git worktree remove "$wtpath"
+    else
+      # Fallback: attempt remove directly (git will error if not a path)
+      git worktree remove "$target"
+    fi
+    ;;
+
+  list)
+    git worktree list --porcelain
+    ;;
+
+  prune)
+    git worktree prune
+    ;;
+
+  help|*)
+    usage
+    ;;
+
+esac
+
+# End
