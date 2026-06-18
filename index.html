@@ -1,46 +1,234 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Liam Winnitoy - Computer Science student at UVic specializing in data systems and software engineering. View my portfolio of data engineering and software projects.">
+        <meta name="keywords" content="Liam Winnitoy, Software Engineer, Data Engineer, Computer Science, UVic, Python, Java, Portfolio">
+        <meta name="author" content="Liam Winnitoy">
+        
+        <!-- Open Graph / LinkedIn -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Liam Winnitoy - Software & Data Engineering Portfolio">
+        <meta property="og:description" content="Computer Science student at UVic building data systems and software solutions.">
+        <meta property="og:url" content="https://lwinnitoy.github.io/portfolio-website/">
+        
+        <title>Liam Winnitoy - Software & Data Engineering Portfolio</title>
         <link rel="stylesheet" href="proj1Style.css">
     </head>
     <body>
-        <div class="title" id="Home">
-            <ul>
-                <h3>Hi, I'm Liam Winnitoy</h3>
-                <h1>I Build Data Systems</h1>
-                <p>I'm a Computer Science student at the University of Victoria with a passion for building systems that handle data with clarity and purpose.
-                I enjoy turning raw information into useful tools.</p>
-                <div class="title-button-container">
-                    <a class="button" id="title-button" href="mailto:lwinnitoy@gmail.com">Get in Touch</a>
-                    <a class="button" href="./Liam_Winnitoy_resume.pdf" target="_blank">Resume</a>
-                    <a class="button" href="https://lwinnitoy.github.io/FairFind/" target="_blank">FairFind Project</a>
+        <header class="header">
+            <nav>
+                <a class="button" href="#about">About</a>
+                <a class="button" href="#skills">Skills</a>
+                <a class="button" href="#education">Education</a>
+                <a class="button" href="#projects">Projects</a>
+                <a class="button" href="resume.pdf" target="_blank">Resume</a>
+                <a class="button" href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <h3>Hi, I'm Liam Winnitoy</h3>
+                    <h1>Software Engineer & Data Systems Developer</h1>
+                    <p>Third-year Computer Science student at UVic seeking internships in software and data engineering. I build efficient, scalable systems with a focus on clean architecture, algorithmic problem-solving, and data-driven solutions.</p>
+                    <a class="button cta-button" href="#contact">Get in Touch</a>
                 </div>
-            </ul>
-            <img src="images/hero-image.png" id="Hero-Image">
-            
-        </div>
-        <div class="contact-icons" id="main-contact-icons">
-            
-                <a href="https://github.com/lwinnitoy" target="_blank">
-                    <img src="images/github-icon.png" alt="Github">
-                </a>
-                <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/" target="_blank">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/liam_winnitoy/" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram" id="instagram-icon">
-                </a>
-                <a href="mailto:lwinnitoy@gmail.com">
-                    <p alt="Email">lwinnitoy@gmail.com</p>
-                </a>
-            
-        </div>
-        
-        
+                <div class="hero-icons">
+                    <a href="https://github.com/lwinnitoy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <img src="images/github-icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </section>
+
+            <div id="progress-wrapper" class="progress-absolute">
+                <div class="progress-bar"></div>
+            </div>
+
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I'm a third-year Computer Science student at the University of Victoria, passionate about data engineering and software development. My focus is on building efficient, scalable systems that process and manage data effectively.</p>
+                    <p>I'm actively seeking internship opportunities in data engineering and software engineering where I can apply my skills in building robust data pipelines, optimizing system performance, and solving complex technical challenges.</p>
+                    <p>When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and learning about distributed systems and database architectures.</p>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">AVR Assembly</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">R</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Git/GitHub</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">GitHub Copilot</span>
+                            <span class="tag">R Studio</span>
+                            <span class="tag">WordPress</span>
+                            <span class="tag">Office 365</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data & Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="tag">SQL Queries</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Power BI Dashboards</span>
+                            <span class="tag">Database Design</span>
+                            <span class="tag">Data Pipelines</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Algorithm Design</span>
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">Testing & QA</span>
+                            <span class="tag">Technical Writing</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education" id="education">
+                <h2>Education</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="institution">University of Victoria</p>
+                        <p class="timeline">Expected Graduation: 2026</p>
+                        <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Systems, Software Engineering, Object-Oriented Programming, Systems Programming</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/medical-clinic.png" alt="Medical Clinic Patient Management System Interface">
+                        </div>
+                        <div class="project-content">
+                            <h3>Medical Clinic Patient Management System</h3>
+                            <p class="project-description">A comprehensive patient management system that enables medical clinics to efficiently manage patient records, appointments, and medical information. Built with a focus on data persistence and user-friendly interface design.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyQT6</span>
+                                <span class="tech-tag">JSON</span>
+                                <span class="tech-tag">Pickle</span>
+                                <span class="tech-tag">DAO Pattern</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Implemented CRUD operations for patient data management</li>
+                                <li>Designed Data Access Object (DAO) pattern for clean separation of concerns</li>
+                                <li>Built intuitive GUI using PyQT6 for streamlined workflow</li>
+                                <li>Utilized JSON and Pickle for robust data persistence</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="button" href="https://github.com/lwinnitoy/Medical-clinic-project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/flight-allocation-graph.png" alt="Flight Allocation Network Flow Visualization">
+                        </div>
+                        <div class="project-content">
+                            <h3>Flight Allocation Optimizer</h3>
+                            <p class="project-description">A sophisticated solution to the flight allocation problem using the Edmonds-Karp maximum flow algorithm. Demonstrates advanced graph theory concepts applied to real-world resource allocation challenges.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Graph Theory</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Network Flow</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Implemented Edmonds-Karp algorithm for maximum flow computation</li>
+                                <li>Designed custom Graph, Edge, and Pair data structures</li>
+                                <li>Optimized flight allocation to maximize resource utilization</li>
+                                <li>Applied theoretical algorithms to solve practical logistics problems</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="button" href="https://github.com/lwinnitoy/edmonds-karp-flight-allocation" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/recipe-generator-image.png" alt="Recipe Generator Application">
+                        </div>
+                        <div class="project-content">
+                            <h3>Recipe Generator</h3>
+                            <p class="project-description">An intelligent recipe recommendation system that helps users discover new recipes based on available ingredients, dietary preferences, and cooking time constraints.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Data Processing</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                            <ul class="project-highlights">
+                                <li>Developed algorithm to match ingredients with recipe database</li>
+                                <li>Implemented filtering system for dietary restrictions</li>
+                                <li>Created user-friendly interface for recipe discovery</li>
+                                <li>Processed and structured recipe data efficiently</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="button" href="https://github.com/lwinnitoy" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Get In Touch</h2>
+                <p class="contact-intro">I'm currently seeking internship opportunities in data engineering and software engineering. Let's connect!</p>
+                <div class="contact-methods">
+                    <a href="mailto:lwinnitoy@gmail.com" class="contact-link">
+                        <strong>Email:</strong> lwinnitoy@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/liam-winnitoy-0507602b3/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <strong>LinkedIn:</strong> Connect with me
+                    </a>
+                    <a href="https://github.com/lwinnitoy" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <strong>GitHub:</strong> View my repositories
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Liam Winnitoy. All rights reserved.</p>
+        </footer>
+
+        <script src="proj1.js"></script>
     </body>
-
-
-
+</html>
 
 
 
