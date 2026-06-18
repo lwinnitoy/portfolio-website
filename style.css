@@ -1,0 +1,240 @@
+/* Syntactic Flux — custom styles
+   Tailwind handles layout/spacing; this file covers:
+   blueprint grid, terminal window, code syntax,
+   component classes, and scroll progress bar.        */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── Blueprint grid background ──────────────────────────────────────────────── */
+.blueprint-grid {
+    background-image:
+        linear-gradient(to right,  #1e293b 1px, transparent 1px),
+        linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+/* ── Glow hover ─────────────────────────────────────────────────────────────── */
+.glow-hover:hover {
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.2),
+                0 0 20px rgba(56, 189, 248, 0.08);
+}
+
+/* ── Navigation links ───────────────────────────────────────────────────────── */
+.nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: #bdc8d1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+.nav-link:hover {
+    color: #dae2fd;
+    background-color: rgba(45, 52, 73, 0.5);
+}
+
+/* ── Hero title size ────────────────────────────────────────────────────────── */
+.hero-title {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    letter-spacing: -0.02em;
+}
+
+/* ── Skill chips ────────────────────────────────────────────────────────────── */
+.skill-chip {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 1rem 0.75rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+.skill-chip:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.15);
+}
+
+/* ── Tech chips (tags) ──────────────────────────────────────────────────────── */
+.tech-chip {
+    background-color: #0f172a;
+    color: #38bdf8;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+}
+
+/* ── Date chip ──────────────────────────────────────────────────────────────── */
+.date-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.2rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+/* ── Current badge ──────────────────────────────────────────────────────────── */
+.current-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background-color: rgba(34, 211, 238, 0.08);
+    border: 1px solid rgba(34, 211, 238, 0.35);
+    color: #22d3ee;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 9999px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.current-chip::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #22d3ee;
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+/* ── Experience cards ───────────────────────────────────────────────────────── */
+.experience-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-left: 2px solid #334155;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    position: relative;
+    margin-left: 0.75rem;
+    transition: border-left-color 0.2s ease;
+}
+.experience-card::before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 2rem;
+    width: 22px;
+    height: 1px;
+    background-color: #38bdf8;
+}
+.experience-card:hover {
+    border-left-color: #38bdf8;
+}
+
+/* ── Small project cards ────────────────────────────────────────────────────── */
+.project-card-sm {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card-sm:hover {
+    border-color: rgba(56, 189, 248, 0.35);
+}
+
+/* ── Terminal window ────────────────────────────────────────────────────────── */
+.terminal-titlebar {
+    display: flex;
+    align-items: center;
+    background-color: #0b1326;
+    border-bottom: 1px solid #334155;
+    padding: 0.6rem 1rem;
+}
+
+.terminal-body {
+    padding: 1.75rem 1.5rem;
+    overflow-x: auto;
+}
+
+/* ── Code block & syntax highlighting ──────────────────────────────────────── */
+.code-block {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.75;
+    white-space: pre;
+    color: #bdc8d1;
+    display: block;
+    margin: 0;
+}
+
+.code-keyword { color: #7dd3fc; }
+.code-fn      { color: #38bdf8; }
+.code-comment { color: #3e5068; font-style: italic; }
+.code-str     { color: #a3e635; }
+.code-op      { color: #e2e8f0; }
+
+/* ── Live dot animation ─────────────────────────────────────────────────────── */
+.live-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1;   transform: scale(1); }
+    50%       { opacity: 0.3; transform: scale(0.75); }
+}
+
+/* ── Scroll progress bar (left side) ───────────────────────────────────────── */
+#progress-wrapper {
+    width: 2px;
+    height: 80vh;
+    background-color: #334155;
+    border-radius: 2px;
+    left: 14px;
+    z-index: 999;
+}
+
+.progress-absolute {
+    position: absolute;
+    top: 80vh;
+}
+
+.progress-fixed {
+    position: fixed;
+    top: 10vh;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0%;
+    background-color: #38bdf8;
+    border-radius: 2px;
+    transition: height 0.2s ease;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    #progress-wrapper {
+        display: none;
+    }
+
+    .experience-card {
+        margin-left: 0;
+    }
+    .experience-card::before {
+        display: none;
+    }
+}
